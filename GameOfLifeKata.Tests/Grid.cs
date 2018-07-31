@@ -29,10 +29,10 @@ namespace GameOfLifeKata.Tests
             foreach (var liveCell in liveCells)
                 if (ShouldPreserve(liveCell))
                     grid.AddCell(liveCell);
- 
+
             foreach (var cell in CellsToBeReborn())
                 grid.AddCell(cell);
- 
+
             return grid;
         }
 
